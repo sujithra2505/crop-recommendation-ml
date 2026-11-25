@@ -1,0 +1,42 @@
+[
+  {
+    "model": "Decision Tree",
+    "input_data": "unscaled",
+    "train_rows": 1760,
+    "training_time_sec": 0.0142,
+    "train_accuracy": 1.0,
+    "model_file": "models/decision_tree.joblib",
+    "hyperparameters": {
+      "criterion": "gini",
+      "max_depth": null,
+      "random_state": 42
+    }
+  },
+  {
+    "model": "Random Forest",
+    "input_data": "unscaled",
+    "train_rows": 1760,
+    "training_time_sec": 0.4054,
+    "train_accuracy": 1.0,
+    "model_file": "models/random_forest.joblib",
+    "hyperparameters": {
+      "criterion": "gini",
+      "max_depth": null,
+      "n_estimators": 100,
+      "random_state": 42
+    }
+  },
+  {
+    "model": "KNN",
+    "input_data": "scaled",
+    "train_rows": 1760,
+    "training_time_sec": 0.0034,
+    "train_accuracy": 0.9847,
+    "model_file": "models/knn.joblib",
+    "hyperparameters": {
+      "metric": "minkowski",
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  }
+]

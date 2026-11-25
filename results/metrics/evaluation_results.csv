@@ -1,0 +1,4 @@
+rank,model,train_accuracy,test_accuracy,generalization_gap,cv_mean_accuracy,cv_std_accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,misclassified,test_rows,training_time_sec,prediction_time_sec,overfitting
+1,Random Forest,1.0,0.9955,0.0045,0.9938,0.0061,0.9957,0.9955,0.9955,0.9957,0.9955,0.9955,2,440,0.4054,0.0147,False
+2,Decision Tree,1.0,0.9795,0.0205,0.9852,0.0068,0.9806,0.9795,0.9794,0.9806,0.9795,0.9794,9,440,0.0142,0.0012,True
+3,KNN,0.9847,0.9795,0.0051,0.9653,0.0121,0.9804,0.9795,0.9793,0.9804,0.9795,0.9793,9,440,0.0034,0.0056,False

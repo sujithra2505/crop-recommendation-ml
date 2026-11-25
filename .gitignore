@@ -1,0 +1,36 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Processed data (regenerate with: python -m src.data_preprocessing)
+data/processed/
+
+# NOTE: models/ and results/ are intentionally NOT ignored:
+# the app needs the trained models, and the README shows the result charts.
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment / secrets
+.env
+
+# Test / tool caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

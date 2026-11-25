@@ -1,0 +1,4 @@
+model,input_data,train_rows,training_time_sec,train_accuracy,model_file
+Decision Tree,unscaled,1760,0.0142,1.0,models/decision_tree.joblib
+Random Forest,unscaled,1760,0.4054,1.0,models/random_forest.joblib
+KNN,scaled,1760,0.0034,0.9847,models/knn.joblib

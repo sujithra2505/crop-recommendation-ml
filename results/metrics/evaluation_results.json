@@ -1,0 +1,140 @@
+{
+  "selection_rule": [
+    "f1_macro (desc)",
+    "cv_mean_accuracy (desc)",
+    "generalization_gap (asc)",
+    "prediction_time_sec (asc)"
+  ],
+  "overfit_gap_threshold": 0.02,
+  "cv_folds": 5,
+  "models": [
+    {
+      "rank": 1,
+      "model": "Random Forest",
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.9954545455,
+      "generalization_gap": 0.0045454545,
+      "cv_mean_accuracy": 0.99375,
+      "cv_std_accuracy": 0.0060665217,
+      "precision_macro": 0.9956709957,
+      "recall_macro": 0.9954545455,
+      "f1_macro": 0.9954517028,
+      "precision_weighted": 0.9956709957,
+      "recall_weighted": 0.9954545455,
+      "f1_weighted": 0.9954517028,
+      "misclassified": 2,
+      "test_rows": 440,
+      "training_time_sec": 0.4054,
+      "prediction_time_sec": 0.0147143,
+      "overfitting": false
+    },
+    {
+      "rank": 2,
+      "model": "Decision Tree",
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.9795454545,
+      "generalization_gap": 0.0204545455,
+      "cv_mean_accuracy": 0.9852272727,
+      "cv_std_accuracy": 0.0068181818,
+      "precision_macro": 0.9805981897,
+      "recall_macro": 0.9795454545,
+      "f1_macro": 0.9794231514,
+      "precision_weighted": 0.9805981897,
+      "recall_weighted": 0.9795454545,
+      "f1_weighted": 0.9794231514,
+      "misclassified": 9,
+      "test_rows": 440,
+      "training_time_sec": 0.0142,
+      "prediction_time_sec": 0.0011662,
+      "overfitting": true
+    },
+    {
+      "rank": 3,
+      "model": "KNN",
+      "train_accuracy": 0.9846590909,
+      "test_accuracy": 0.9795454545,
+      "generalization_gap": 0.0051136364,
+      "cv_mean_accuracy": 0.9653409091,
+      "cv_std_accuracy": 0.0121064067,
+      "precision_macro": 0.9803555031,
+      "recall_macro": 0.9795454545,
+      "f1_macro": 0.9792832328,
+      "precision_weighted": 0.9803555031,
+      "recall_weighted": 0.9795454545,
+      "f1_weighted": 0.9792832328,
+      "misclassified": 9,
+      "test_rows": 440,
+      "training_time_sec": 0.0034,
+      "prediction_time_sec": 0.0055642,
+      "overfitting": false
+    }
+  ],
+  "top_confusions": {
+    "Random Forest": [
+      {
+        "true": "rice",
+        "predicted": "jute",
+        "count": 1
+      },
+      {
+        "true": "blackgram",
+        "predicted": "maize",
+        "count": 1
+      }
+    ],
+    "Decision Tree": [
+      {
+        "true": "lentil",
+        "predicted": "mothbeans",
+        "count": 2
+      },
+      {
+        "true": "blackgram",
+        "predicted": "lentil",
+        "count": 2
+      },
+      {
+        "true": "mothbeans",
+        "predicted": "lentil",
+        "count": 1
+      },
+      {
+        "true": "rice",
+        "predicted": "jute",
+        "count": 1
+      },
+      {
+        "true": "jute",
+        "predicted": "rice",
+        "count": 1
+      }
+    ],
+    "KNN": [
+      {
+        "true": "mothbeans",
+        "predicted": "lentil",
+        "count": 2
+      },
+      {
+        "true": "mothbeans",
+        "predicted": "mango",
+        "count": 1
+      },
+      {
+        "true": "orange",
+        "predicted": "pomegranate",
+        "count": 1
+      },
+      {
+        "true": "maize",
+        "predicted": "cotton",
+        "count": 1
+      },
+      {
+        "true": "rice",
+        "predicted": "jute",
+        "count": 1
+      }
+    ]
+  }
+}
